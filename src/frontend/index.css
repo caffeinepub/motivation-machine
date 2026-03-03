@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Dark theme — always on */
+    --background: 0.13 0.01 260;
+    --foreground: 0.97 0.01 260;
+    --card: 0.17 0.01 260;
+    --card-foreground: 0.97 0.01 260;
+    --popover: 0.17 0.01 260;
+    --popover-foreground: 0.97 0.01 260;
+    --primary: 0.97 0.01 260;
+    --primary-foreground: 0.13 0.01 260;
+    --secondary: 0.22 0.01 260;
+    --secondary-foreground: 0.97 0.01 260;
+    --muted: 0.22 0.01 260;
+    --muted-foreground: 0.55 0.02 260;
+    --accent: 0.22 0.01 260;
+    --accent-foreground: 0.97 0.01 260;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.25 0.01 260;
+    --input: 0.25 0.01 260;
+    --ring: 0.55 0.02 260;
+
+    /* Category accent colors */
+    --color-discipline: 0.75 0.18 65;     /* amber/orange */
+    --color-business: 0.72 0.15 225;      /* sky blue */
+    --color-fitness: 0.72 0.18 150;       /* emerald green */
+    --color-life: 0.72 0.18 310;          /* violet/purple */
+    --color-stoic: 0.65 0.04 80;          /* warm stone */
+    --color-all: 0.97 0.01 260;           /* near white */
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.17 0.01 260;
+    --sidebar-foreground: 0.97 0.01 260;
+    --sidebar-primary: 0.97 0.01 260;
+    --sidebar-primary-foreground: 0.13 0.01 260;
+    --sidebar-accent: 0.22 0.01 260;
+    --sidebar-accent-foreground: 0.97 0.01 260;
+    --sidebar-border: 0.25 0.01 260;
+    --sidebar-ring: 0.55 0.02 260;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Outfit", "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
